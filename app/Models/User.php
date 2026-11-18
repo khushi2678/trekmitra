@@ -1,3 +1,4 @@
+
 <?php
 
 namespace App\Models;
@@ -15,32 +16,46 @@ use Illuminate\Support\Carbon;
  * @property int $id
  * @property string $name
  * @property string $email
+ * @property string $role
+ * @property string|null $phone
+ * @property string|null $gender
+ * @property string|null $trek_level
+ * @property string|null $emergency_contact_name
+ * @property string|null $emergency_contact_phone
+ * @property bool $is_blocked
  * @property Carbon|null $email_verified_at
  * @property string $password
- * @property string|null $two_factor_secret
- * @property string|null $two_factor_recovery_codes
- * @property Carbon|null $two_factor_confirmed_at
  * @property string|null $remember_token
  * @property Carbon|null $created_at
  * @property Carbon|null $updated_at
  */
-#[Fillable(['name', 'email', 'password'])]
-#[Hidden(['password', 'two_factor_secret', 'two_factor_recovery_codes', 'remember_token'])]
+#[Fillable([
+    'name',
+    'email',
+    'password',
+    'role',
+    'phone',
+    'gender',
+    'trek_level',
+    'emergency_contact_name',
+    'emergency_contact_phone',
+    'is_blocked',
+])]
+#[Hidden([
+    'password',
+    'remember_token',
+])]
 class User extends Authenticatable implements MustVerifyEmail
 {
     /** @use HasFactory<UserFactory> */
     use HasFactory, Notifiable;
 
-    /**
-     * Get the attributes that should be cast.
-     *
-     * @return array<string, string>
-     */
     protected function casts(): array
     {
         return [
             'email_verified_at' => 'datetime',
             'password' => 'hashed',
+            'is_blocked' => 'boolean',
         ];
     }
 }
