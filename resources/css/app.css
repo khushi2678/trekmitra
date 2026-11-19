@@ -1,6 +1,4 @@
-
 @import 'tailwindcss';
-
 @import 'tw-animate-css';
 
 @source '../views';
@@ -14,49 +12,49 @@
 
 @font-face {
     font-family: 'Fraunces';
-    src: url('http://trekmitra.test/fonts/fraunces-regular.ttf') format('truetype');
+    src: url('/fonts/fraunces-regular.ttf') format('truetype');
     font-weight: 400;
     font-display: swap;
 }
 
 @font-face {
     font-family: 'Fraunces';
-    src: url('http://trekmitra.test/fonts/fraunces-semibold.ttf') format('truetype');
+    src: url('/fonts/fraunces-semibold.ttf') format('truetype');
     font-weight: 600;
     font-display: swap;
 }
 
 @font-face {
     font-family: 'Fraunces';
-    src: url('http://trekmitra.test/fonts/fraunces-bold.ttf') format('truetype');
+    src: url('/fonts/fraunces-bold.ttf') format('truetype');
     font-weight: 700;
     font-display: swap;
 }
 
 @font-face {
     font-family: 'Source Sans 3';
-    src: url('http://trekmitra.test/fonts/source-sans-regular.ttf') format('truetype');
+    src: url('/fonts/source-sans-regular.ttf') format('truetype');
     font-weight: 400;
     font-display: swap;
 }
 
 @font-face {
     font-family: 'Source Sans 3';
-    src: url('http://trekmitra.test/fonts/source-sans-medium.ttf') format('truetype');
+    src: url('/fonts/source-sans-medium.ttf') format('truetype');
     font-weight: 500;
     font-display: swap;
 }
 
 @font-face {
     font-family: 'Source Sans 3';
-    src: url('http://trekmitra.test/fonts/source-sans-semibold.ttf') format('truetype');
+    src: url('/fonts/source-sans-semibold.ttf') format('truetype');
     font-weight: 600;
     font-display: swap;
 }
 
 @font-face {
     font-family: 'Source Sans 3';
-    src: url('http://trekmitra.test/fonts/source-sans-bold.ttf') format('truetype');
+    src: url('/fonts/source-sans-bold.ttf') format('truetype');
     font-weight: 700;
     font-display: swap;
 }
@@ -68,9 +66,10 @@
 @theme {
     --font-sans: 'Source Sans 3', sans-serif;
     --font-heading: 'Fraunces', serif;
+    --font-display: 'Fraunces', Georgia, serif;
 
-    --radius-lg: 6px;
-    --radius-md: 4px;
+    --radius-lg: 8px;
+    --radius-md: 6px;
     --radius-sm: 4px;
 
     --color-background: var(--background);
@@ -115,6 +114,44 @@
     --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
     --color-sidebar-border: var(--sidebar-border);
     --color-sidebar-ring: var(--sidebar-ring);
+
+    /* =====================================
+       TREKMITRA NATURE PALETTE
+    ===================================== */
+
+    --color-forest: #174C3C;
+    --color-forest-hover: #103D30;
+    --color-charcoal: #17352D;
+
+    --color-slate: #65736B;
+    --color-page: #F7F6F0;
+    --color-surface: #FFFFFF;
+    --color-stone: #E8E5DB;
+
+    --color-mint: #DCE8DE;
+    --color-accent: #B58B55;
+    --color-accent-ink: #A17A48;
+
+    --color-secondary: #DCE8DE;
+
+    --color-sunrise: #C89545;
+    --color-sunrise-hover: #D6A85E;
+    --color-sunrise-dark: #946C35;
+
+    --color-error: #B91C1C;
+
+    /* =====================================
+       TREK DIFFICULTY BADGE COLOURS
+    ===================================== */
+
+    --color-level-beginner: #26745A;
+    --color-level-beginner-bg: #DCEFE3;
+
+    --color-level-intermediate: #A47736;
+    --color-level-intermediate-bg: #F5EBD7;
+
+    --color-level-expert: #B91C1C;
+    --color-level-expert-bg: #FEE2E2;
 }
 
 /* =========================================
@@ -122,50 +159,50 @@
 ========================================= */
 
 :root {
-    --background: #FAF8F4;
-    --foreground: #1F2933;
+    --background: #F7F6F0;
+    --foreground: #174C3C;
 
     --card: #FFFFFF;
-    --card-foreground: #1F2933;
+    --card-foreground: #174C3C;
 
     --popover: #FFFFFF;
-    --popover-foreground: #1F2933;
+    --popover-foreground: #174C3C;
 
-    --primary: #1B5E4A;
+    --primary: #174C3C;
     --primary-foreground: #FFFFFF;
 
-    --secondary: #E8E5DE;
-    --secondary-foreground: #1F2933;
+    --secondary: #DCE8DE;
+    --secondary-foreground: #174C3C;
 
-    --muted: #F0EEE8;
-    --muted-foreground: #5B6770;
+    --muted: #EAECE5;
+    --muted-foreground: #65736B;
 
-    --accent: #E8F0EB;
-    --accent-foreground: #1B5E4A;
+    --accent: #B58B55;
+    --accent-foreground: #FFFFFF;
 
-    --destructive: #B3261E;
+    --destructive: #B91C1C;
     --destructive-foreground: #FFFFFF;
 
-    --border: #D9D4CA;
-    --input: #D9D4CA;
-    --ring: #1B5E4A;
+    --border: #E3E2D8;
+    --input: #E3E2D8;
+    --ring: #B58B55;
 
-    --chart-1: #1B5E4A;
-    --chart-2: #2E7D32;
-    --chart-3: #B26A00;
-    --chart-4: #B3261E;
-    --chart-5: #5B6770;
+    --chart-1: #174C3C;
+    --chart-2: #4C8068;
+    --chart-3: #B58B55;
+    --chart-4: #B91C1C;
+    --chart-5: #65736B;
 
-    --radius: 6px;
+    --radius: 8px;
 
     --sidebar: #FFFFFF;
-    --sidebar-foreground: #1F2933;
-    --sidebar-primary: #1B5E4A;
+    --sidebar-foreground: #174C3C;
+    --sidebar-primary: #174C3C;
     --sidebar-primary-foreground: #FFFFFF;
-    --sidebar-accent: #E8F0EB;
-    --sidebar-accent-foreground: #1B5E4A;
-    --sidebar-border: #D9D4CA;
-    --sidebar-ring: #1B5E4A;
+    --sidebar-accent: #DCE8DE;
+    --sidebar-accent-foreground: #174C3C;
+    --sidebar-border: #E3E2D8;
+    --sidebar-ring: #B58B55;
 }
 
 /* =========================================
@@ -173,48 +210,48 @@
 ========================================= */
 
 .dark {
-    --background: #1F2933;
-    --foreground: #FAF8F4;
+    --background: #142D25;
+    --foreground: #F7F6F0;
 
-    --card: #293640;
-    --card-foreground: #FAF8F4;
+    --card: #1C3B30;
+    --card-foreground: #F7F6F0;
 
-    --popover: #293640;
-    --popover-foreground: #FAF8F4;
+    --popover: #1C3B30;
+    --popover-foreground: #F7F6F0;
 
-    --primary: #79B99D;
-    --primary-foreground: #1F2933;
+    --primary: #DCE8DE;
+    --primary-foreground: #174C3C;
 
-    --secondary: #37434B;
-    --secondary-foreground: #FAF8F4;
+    --secondary: #315344;
+    --secondary-foreground: #F7F6F0;
 
-    --muted: #37434B;
-    --muted-foreground: #C0C7CA;
+    --muted: #29463A;
+    --muted-foreground: #C0CFC4;
 
-    --accent: #374C43;
-    --accent-foreground: #D8F0E1;
+    --accent: #B58B55;
+    --accent-foreground: #FFFFFF;
 
-    --destructive: #F28B82;
-    --destructive-foreground: #1F2933;
+    --destructive: #FCA5A5;
+    --destructive-foreground: #142D25;
 
-    --border: #4B565C;
-    --input: #4B565C;
-    --ring: #79B99D;
+    --border: #3B594A;
+    --input: #3B594A;
+    --ring: #D0AD78;
 
-    --chart-1: #79B99D;
-    --chart-2: #A5D6A7;
-    --chart-3: #FFCC80;
-    --chart-4: #F28B82;
-    --chart-5: #C0C7CA;
+    --chart-1: #DCE8DE;
+    --chart-2: #8EBA9C;
+    --chart-3: #D0AD78;
+    --chart-4: #FCA5A5;
+    --chart-5: #C0CFC4;
 
-    --sidebar: #293640;
-    --sidebar-foreground: #FAF8F4;
-    --sidebar-primary: #79B99D;
-    --sidebar-primary-foreground: #1F2933;
-    --sidebar-accent: #374C43;
-    --sidebar-accent-foreground: #D8F0E1;
-    --sidebar-border: #4B565C;
-    --sidebar-ring: #79B99D;
+    --sidebar: #1C3B30;
+    --sidebar-foreground: #F7F6F0;
+    --sidebar-primary: #DCE8DE;
+    --sidebar-primary-foreground: #174C3C;
+    --sidebar-accent: #315344;
+    --sidebar-accent-foreground: #F7F6F0;
+    --sidebar-border: #3B594A;
+    --sidebar-ring: #D0AD78;
 }
 
 /* =========================================
@@ -238,5 +275,511 @@
     h5,
     h6 {
         font-family: 'Fraunces', serif;
+    }
+}
+
+/* =========================================
+   HOME HERO ENTRANCE ANIMATIONS
+========================================= */
+
+@keyframes tm-rise {
+    from {
+        opacity: 0;
+        transform: translateY(18px);
+    }
+
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+@keyframes tm-pop {
+    from {
+        opacity: 0;
+        transform: scale(0.94);
+    }
+
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.tm-rise {
+    animation: tm-rise 700ms cubic-bezier(0.2, 0.7, 0.2, 1) both;
+}
+
+.tm-pop {
+    animation: tm-pop 500ms cubic-bezier(0.2, 0.7, 0.36, 1) both;
+}
+
+/* =========================================
+   HEADER MENU
+========================================= */
+
+.tm-trigger {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 0;
+    font-size: 15px;
+    color: var(--color-slate);
+    transition: color .25s ease;
+    cursor: pointer;
+}
+
+.tm-trigger:hover,
+.tm-trigger[aria-expanded="true"] {
+    color: var(--color-accent-ink);
+}
+
+.tm-trigger:hover,
+.tm-trigger[aria-expanded="true"] {
+    box-shadow: inset 0 -2px 0 var(--color-accent);
+}
+
+.tm-trigger:focus-visible {
+    outline: 2px solid var(--color-forest);
+    outline-offset: 3px;
+    border-radius: 4px;
+}
+
+.tm-chev {
+    transition: transform .35s cubic-bezier(.22,1,.36,1);
+}
+
+.tm-trigger[aria-expanded="true"] .tm-chev {
+    transform: rotate(180deg);
+}
+
+.tm-dd {
+    --x: 0px;
+    --w: 400px;
+    --h: 300px;
+    --s: .97;
+    --morph: .5s;
+
+    position: absolute;
+    z-index: 20;
+    top: 56px;
+    left: 0;
+    width: var(--w);
+    height: var(--h);
+    transform: translateX(var(--x)) scale(var(--s));
+    transform-origin: 50% 0;
+    opacity: 0;
+    pointer-events: none;
+    overflow: hidden;
+    border-radius: 12px;
+    background: var(--color-mint);
+    border: 1px solid var(--color-secondary);
+    box-shadow:
+        0 24px 60px -24px rgba(31,41,51,.35),
+        0 2px 8px rgba(31,41,51,.06);
+    transition:
+        transform var(--morph) cubic-bezier(.22,1,.36,1),
+        width var(--morph) cubic-bezier(.22,1,.36,1),
+        height var(--morph) cubic-bezier(.22,1,.36,1),
+        opacity .3s ease;
+}
+
+.tm-dd.open {
+    --s: 1;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.tm-dd.instant {
+    transition:
+        opacity .3s ease,
+        transform var(--morph) cubic-bezier(.22,1,.36,1);
+}
+
+.tm-dd.instant.snap {
+    transition: none;
+}
+
+.tm-panel {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    filter: blur(8px);
+    transition:
+        opacity .26s ease,
+        transform var(--morph) cubic-bezier(.22,1,.36,1),
+        filter .4s ease,
+        visibility 0s linear var(--morph);
+}
+
+.tm-panel[data-state="exit-left"] {
+    transform: translateX(-56px);
+}
+
+.tm-panel[data-state="exit-right"] {
+    transform: translateX(56px);
+}
+
+.tm-panel[data-state="active"] {
+    opacity: 1;
+    visibility: visible;
+    filter: blur(0);
+    transform: translateX(0);
+    transition:
+        opacity .36s ease .06s,
+        transform var(--morph) cubic-bezier(.22,1,.36,1),
+        filter .45s ease .04s,
+        visibility 0s;
+}
+
+.tm-panel.snap {
+    transition: none !important;
+}
+
+.tm-media img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transform: scale(1.06);
+    filter: blur(10px);
+    transition:
+        opacity .6s ease,
+        transform .9s cubic-bezier(.22,1,.36,1),
+        filter .6s ease;
+}
+
+.tm-media img.is-active {
+    opacity: 1;
+    transform: scale(1);
+    filter: blur(0);
+    z-index: 1;
+}
+
+.tm-sheet {
+    position: absolute;
+    top: 72px;
+    left: 12px;
+    right: 12px;
+    padding: 8px 6px 12px;
+    max-height: calc(100svh - 84px);
+    overflow: auto;
+    border-radius: 12px;
+    background: var(--color-mint);
+    border: 1px solid var(--color-secondary);
+    box-shadow: 0 24px 60px -24px rgba(31,41,51,.35);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-6px) scale(.98);
+    transform-origin: 50% 0;
+    transition:
+        opacity .3s ease,
+        transform .45s cubic-bezier(.22,1,.36,1),
+        visibility 0s linear .45s;
+}
+
+.tm-sheet.open {
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    transition:
+        opacity .3s ease,
+        transform .45s cubic-bezier(.22,1,.36,1),
+        visibility 0s;
+}
+
+/* =========================================
+   HEADER FADE ANIMATIONS
+========================================= */
+
+@keyframes tm-fade-down {
+    from {
+        opacity: 0;
+        transform: translateY(-8px);
+    }
+}
+
+@keyframes tm-fade {
+    from {
+        opacity: 0;
+    }
+}
+
+.tm-fade-down {
+    animation: tm-fade-down .9s cubic-bezier(.22,1,.36,1) .35s backwards;
+}
+
+.tm-fade {
+    animation: tm-fade .9s ease .45s backwards;
+}
+
+/* =========================================
+   CLOSING SECTION
+========================================= */
+
+.tm-mask {
+    overflow: hidden;
+    padding-bottom: 6px;
+}
+
+@keyframes tm-reveal-up {
+    from {
+        opacity: 0;
+        transform: translateY(14px);
+    }
+}
+
+@keyframes tm-headline-up {
+    from {
+        transform: translateY(118%);
+    }
+}
+
+@keyframes tm-rule {
+    from {
+        transform: scaleX(0);
+    }
+}
+
+.tm-reveal.tm-armed:not(.tm-in) [data-reveal],
+.tm-reveal.tm-armed:not(.tm-in) [data-headline] {
+    opacity: 0;
+}
+
+.tm-reveal.tm-armed:not(.tm-in) [data-rule] {
+    transform: scaleX(0);
+}
+
+.tm-reveal.tm-in [data-reveal] {
+    animation: tm-reveal-up .6s cubic-bezier(.22,.65,.28,1) backwards;
+}
+
+.tm-reveal.tm-in [data-headline] {
+    animation: tm-headline-up .95s cubic-bezier(.16,1,.3,1) backwards;
+}
+
+.tm-reveal.tm-in [data-rule] {
+    transform-origin: left center;
+    animation: tm-rule .72s cubic-bezier(.16,1,.3,1) backwards;
+}
+
+/* =========================================
+   SEARCH BAR MENUS
+========================================= */
+
+@keyframes tm-select-in {
+    from {
+        opacity: 0;
+        transform: translateY(-4px) scale(.98);
+    }
+}
+
+.tm-select-content[data-state="open"] {
+    animation: tm-select-in .18s cubic-bezier(.22,1,.36,1);
+    transform-origin: var(--radix-select-content-transform-origin);
+}
+
+/* =========================================
+   COMPACT SEARCH IN STICKY HEADER
+========================================= */
+
+.tm-compact {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transform: translate(-50%, -50%) scale(.86) translateY(14px);
+    transition:
+        opacity .22s ease,
+        transform .35s cubic-bezier(.22,1,.36,1),
+        visibility 0s linear .35s,
+        box-shadow .2s ease;
+}
+
+.tm-compact.is-visible {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: translate(-50%, -50%);
+    transition:
+        opacity .22s ease,
+        transform .35s cubic-bezier(.22,1,.36,1),
+        visibility 0s,
+        box-shadow .2s ease;
+}
+
+/* =========================================
+   TREK CARD ROWS
+========================================= */
+
+.tm-row {
+    scrollbar-width: none;
+}
+
+.tm-row::-webkit-scrollbar {
+    display: none;
+}
+
+/* =========================================
+   PAGE BACKDROP
+========================================= */
+
+@keyframes tm-backdrop-in {
+    from {
+        opacity: 0;
+    }
+}
+
+.tm-backdrop {
+    animation: tm-backdrop-in .25s ease;
+}
+
+/* =========================================
+   AUTHENTICATION PAGES
+   Login, Register, Password
+========================================= */
+
+/* Light glass surface */
+
+.tm-glass {
+    background: rgba(255, 255, 255, 0.78);
+    -webkit-backdrop-filter: blur(22px) saturate(1.2);
+    backdrop-filter: blur(22px) saturate(1.2);
+    border: 1px solid rgba(255, 255, 255, 0.75);
+    box-shadow:
+        0 1px 0 rgba(255, 255, 255, 0.8) inset,
+        0 20px 60px -35px rgba(23, 76, 60, 0.25);
+}
+
+@supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+    .tm-glass {
+        background: rgba(255, 255, 255, 0.96);
+    }
+}
+
+/* Auth animation */
+
+@keyframes tm-glass-in {
+    from {
+        opacity: 0;
+        transform: translateY(14px) scale(.985);
+    }
+}
+
+.tm-glass-in {
+    animation: tm-glass-in .6s cubic-bezier(.22,1,.36,1) both;
+}
+
+/* Dark glass card */
+
+.tm-glass-dark {
+    background: rgba(16, 38, 30, 0.76);
+    -webkit-backdrop-filter: blur(18px) saturate(1.2);
+    backdrop-filter: blur(18px) saturate(1.2);
+    border: 1px solid rgba(255, 255, 255, 0.22);
+    box-shadow:
+        0 1px 0 rgba(255, 255, 255, 0.12) inset,
+        0 30px 80px -30px rgba(0, 0, 0, 0.45);
+}
+
+@supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+    .tm-glass-dark {
+        background: rgba(16, 38, 30, 0.95);
+    }
+}
+
+.tm-glass-dark input:-webkit-autofill {
+    -webkit-text-fill-color: #FFFFFF;
+    -webkit-box-shadow: 0 0 0 1000px transparent inset;
+    transition: background-color 9999s ease-out 0s;
+}
+
+/* Auth color utilities */
+
+.tm-auth-bg {
+    background-color: #F7F6F0;
+}
+
+.tm-auth-heading {
+    color: #174C3C;
+}
+
+.tm-auth-muted {
+    color: #65736B;
+}
+
+.tm-auth-accent {
+    color: #A17A48;
+}
+
+.tm-auth-button {
+    background-color: #174C3C;
+    color: #FFFFFF;
+    transition: background-color .2s ease, box-shadow .2s ease;
+}
+
+.tm-auth-button:hover {
+    background-color: #103D30;
+}
+
+.tm-auth-button:focus-visible {
+    outline: 2px solid #B58B55;
+    outline-offset: 3px;
+}
+
+/* =========================================
+   TREKMITRA LEGACY THEME COMPATIBILITY
+========================================= */
+
+.theme {
+    --color-page: #F7F6F0;
+    --color-forest: #174C3C;
+    --color-forest-hover: #103D30;
+    --color-accent: #B58B55;
+    --color-accent-ink: #A17A48;
+    --color-mint: #DCE8DE;
+    --color-slate: #65736B;
+    --color-sunrise: #C89545;
+    --color-sunrise-hover: #D6A85E;
+    --color-sunrise-dark: #946C35;
+}
+
+/* =========================================
+   REDUCED MOTION ACCESSIBILITY
+========================================= */
+
+@media (prefers-reduced-motion: reduce) {
+    .tm-rise,
+    .tm-pop,
+    .tm-fade-down,
+    .tm-fade,
+    .tm-glass-in {
+        animation: none;
+    }
+
+    .tm-dd,
+    .tm-panel,
+    .tm-panel[data-state],
+    .tm-media img,
+    .tm-sheet,
+    .tm-sheet.open {
+        transition-duration: .01s !important;
+        filter: none !important;
+    }
+
+    .tm-select-content[data-state="open"] {
+        animation: none;
+    }
+
+    .tm-compact,
+    .tm-compact.is-visible {
+        transition: none;
+    }
+
+    .tm-backdrop {
+        animation: none;
     }
 }
